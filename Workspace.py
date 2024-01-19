@@ -87,7 +87,6 @@ class View:
     def set_day(self, index):
         self.selected_day = self.days[index]
         self.active_button.set(index)
-        print(self.selected_day)
         self.today_page = self.controller.get_page_by_day(day = self.selected_day)['text']
         self.setText(today_page = self.today_page)
 
