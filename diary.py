@@ -1,9 +1,8 @@
 from tkinter import *
 from datetime import datetime
 from tinydb import TinyDB, Query
-global selected_day
 TODAY = str(datetime.now())[:10]
-selected_day = TODAY
+
 class Model:
     def __init__(self):
         self.tinydb = TinyDB('db.json')
@@ -41,7 +40,7 @@ class View:
         self.controller = controller
         self.active_button = IntVar(value=-1) 
         self.buttons = []
-        self.selected_day = selected_day
+        self.selected_day = TODAY
 
         if self.controller : 
             self.days = self.controller.get_days()

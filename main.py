@@ -1,5 +1,6 @@
 import tkinter as tk
-from Workspace import Diary
+from diary import Diary
+
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -10,5 +11,4 @@ class App(tk.Tk):
         Diary(self)
         
 if __name__ == "__main__":
-    app = App()
-    app.mainloop()
+    App().mainloop()
