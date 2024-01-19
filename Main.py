@@ -9,8 +9,6 @@ class App(tk.Tk):
 
         Diary(self)
         
-
-
 if __name__ == "__main__":
     app = App()
     app.mainloop()
