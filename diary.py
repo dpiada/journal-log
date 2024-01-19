@@ -68,10 +68,10 @@ class View:
 
         entryFrame.grid(row=0, column=1)
         
-        self.entryValueText = Text(entryFrame, font=("Arial", 12), bg="white", fg="black", wrap=WORD, width=55, height=16)
-        self.entryValueText.grid(padx=5, pady=5)
+        self.entryValueText = Text(entryFrame, font=("Arial", 12), bg="white", fg="black", wrap=WORD, width=52, height=16)
+        self.entryValueText.grid(padx=5, pady=8)
         self.setText(today_page = self.today_page)
-        self.entryValueText.bind('<Control-s>', lambda event: self.controller.save(day=selected_day, text = self.entryValueText.get(1.0, END)))
+        self.entryValueText.bind('<Control-s>', lambda event: self.controller.save(day=self.selected_day, text = self.entryValueText.get(1.0, END)))
 
     def set_controller(self, controller):
         self.controller = controller
