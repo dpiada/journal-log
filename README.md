@@ -16,7 +16,7 @@ The Model class is responsible for handling data storage and retrieval using Tin
 The View class handles the graphical user interface using Tkinter. It consists of a list of buttons for each day, a text entry area, and methods for updating the UI based on user interactions.
 
 3. Controller \
-The Controller class acts as an intermediary between the Model and View. It provides methods for retrieving days, fetching a page by day, getting today's page, and saving changes.
+The Controller class acts as an intermediary between the Model and View. It provides methods for retrieving days, fetching a git ppage by day, getting today's page, and saving changes.
 
 4. Diary \
 The Diary class initializes the Model, Controller, and View to create the complete diary application.
